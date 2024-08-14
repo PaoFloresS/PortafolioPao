@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paola Flores</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#presentacion">¿Quién soy?</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contacto">Contacto</a>
+            </li>
+<!--             <li class="nav-item">
+              <button id="pauseButton">Pausar</button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="pb-5 mb-5">
+
+
+    <section id="presentacion" class="container-fluid">
+      <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
+        <div class="row flex-lg-row align-items-center g-5 py-5 my-5">
+          <div class="col-lg-6">
+            <h1 id="app" class="display-5 fw-bold text-white text-shadow-1 mb-3 rubik-pixels-regular">
+              Paola Flores Sandoval
+            </h1>
+            <p class="lead text-shadow-1 text-white">Desarrolladora fullstack Jr, ingeniera petrolera recién egresada y una apasionada de la vida.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contáctame</button>
+              <button type="button" class="btn btn-secondary btn-lg px-4" onclick="copiarAlPortapapeles('pao_floressandoval@hotmail.com')">pao_floressandoval@hotmail.com</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container px-4 py-5" id="habilidades">
+      <h2 class="pb-2 border-bottom">Habilidades</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+            <i class="bi bi-code-square"></i>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Desarrollo web</h3>
+          <p>Poseo experiencia en desarrollo web, utilizando tecnologías modernas como JavaScript, HTML y CSS para crear aplicaciones interactivas y responsivas que mejoran la experiencia del usuario.</p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+            <i class="bi bi-github"></i>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Responsable</h3>
+          <p>Me caracterizo por mi compromiso con la calidad y el cumplimiento de plazos, asegurando que cada tarea y proyecto se complete con el máximo nivel de detalle y profesionalismo.</p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary fs-2 px-3 py-2 rounded m-2">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Trabajo en equipo</h3>
+          <p> Tengo experiencia trabajando en equipos multidisciplinarios, donde la comunicación efectiva y la colaboración son clave para resolver problemas y alcanzar objetivos comunes.</p>
+        </div>
+      </div>
+    </section>
+
+
+   <section id="proyectos" class="container px-4 py-5">
+  <h2 class="pb-2 border-bottom">Proyectos</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="col">
+      <div id="proyecto-1" class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+        <img src="clon_google.png" class="card-img" alt="Clon de Google">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <a class="link-light" href="" target="_blank">DA CLICK</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div id="proyecto-2" class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+        <img src="intereses.png" class="card-img" alt="Intereses Personales">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Intereses Personales</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <a class="link-light" href="" target="_blank">DA CLICK</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="testimonios">
+      <section id="proyectos" class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Testimonios</h2>
+  
+      <div id="myCarousel" data-bs-theme="dark" class="carousel slide mb-6" data-bs-ride="carousel">
+        <!-- Indicadores son los puntitos encima que me permiten navegar por los elementos -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+            class=""></button>
+        </div>
+
+        <!-- Contenido del carousel -->
+        <div class="carousel-inner">
+
+
+          <div class="carousel-item active">
+            <article class="container py-5 text-center px-5">
+              <img class="rounded-5" src="cleopatra.jpeg" height="300" alt="Cleopatra">
+              <h3 class="my-3">Cleopatra</h3>
+              <p>La colaboración con Paola ha sido una experiencia destacada. Su habilidad para combinar la ingeniería con la programación y su capacidad para desarrollar soluciones prácticas y eficaces son impresionantes. Paola se comunica de manera clara y trabaja con una actitud siempre positiva y colaborativa. Su visión estratégica y su compromiso con la implementación de innovaciones tecnológicas son altamente recomendables. Cleopatra valoraría su enfoque en proyectos de gran impacto y recomendaría a Paola para cualquier desafío que requiera un liderazgo competente y una sólida capacidad investigativa.</p>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="container py-5 text-center px-5">
+              <img class="rounded-5" src="curie.jpg" height="300" alt="Marie Curie">
+              <h3 class="my-3">Marie Curie</h3>
+              <p>Colaborar con Paola ha sido verdaderamente inspirador. Su enfoque en el análisis de datos y el desarrollo de algoritmos de inteligencia artificial demuestra una gran pasión por la ciencia y la tecnología. Paola aborda cada tarea con una dedicación ejemplar y una actitud de colaboración que facilita el trabajo en equipo. Su capacidad para enfrentar problemas complejos con creatividad y precisión es digna de reconocimiento. Marie Curie apreciaría su compromiso con el avance del conocimiento y recomendaría a Paola para cualquier proyecto que requiera investigación meticulosa y una destacada habilidad técnica.</p>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="container py-5 text-center px-5">
+              <img class="rounded-5" src="hipatia.jpeg" height="300" alt="Hipatia De Alejandría">
+              <h3 class="my-3">Hipatia de Alejandría</h3>
+              <p>Trabajar con Paola ha sido una experiencia verdaderamente enriquecedora. Su capacidad para integrar la inteligencia artificial en el análisis de datos y el monitoreo de gasoductos es notable. Paola demuestra una dedicación excepcional y habilidad para abordar problemas complejos con soluciones innovadoras. Su comunicación efectiva y su actitud colaborativa en el trabajo en equipo son dignas de elogio. Su atención al detalle y su compromiso con la excelencia en cada proyecto son aspectos que Hipatia admiraría profundamente. Recomiendo a Paola para cualquier iniciativa que requiera un enfoque riguroso y un trabajo en equipo ejemplar.</p>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- Botones que son las flechitas para pasar de diapositiva (slide) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer id="contacto" class="container-fluid bg-black" data-bs-theme="dark">
+    <div class="py-3">
+
+      <div class="text-center mt-5">
+        <i class="bi bi-moon-stars-fill fs-1 text-body-secondary"></i>
+      </div>
+
+      <h4 id="frase" class="text-center text-body-secondary mt-3 mb-5">"No se trata de ser la mejor. Se trata de ser mejor que ayer."</h4>
+
+      <ul class="nav justify-content-center pb-3 mb-3">
+
+        <li class="nav-item">
+          <a href="https://www.instagram.com/pao_floressandoval/" target="_blank" class="nav-link px-2 text-body-secondary">
+            <i class="bi bi-instagram fs-1"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/paola-flores-sandoval-92207b274/" target="_blank" class="nav-link px-2 text-body-secondary">
+            <i class="bi bi-linkedin fs-1"></i>
+          </a>
+        </li>
+        
+
+        <li class="nav-item">
+          <a href="https://github.com/PaoFloresS" target="_blank" class="nav-link px-2 text-body-secondary">
+            <i class="bi bi-github fs-1"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2024 Pao, TECHNOLOCHICAS PRO</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

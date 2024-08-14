@@ -1,0 +1,46 @@
+/*
+
+selector {
+    propiedad: valor !important;
+}
+
+*/
+
+#presentacion {
+    min-height: 88vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    background-image: url("fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.proyecto {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+.text-shadow-1 {
+    text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
+}
+
+.bg-brand {
+    background-color: blueviolet;
+}
+
+.text-brand {
+    color: blueviolet;
+}
+
+.rubik-pixels-regular {
+    font-family: "Rubik Pixels", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
